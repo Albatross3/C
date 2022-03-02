@@ -1,6 +1,8 @@
 #include <stdio.h>
 int main(void) 
 {
-	printf("To C, or not to C: that is the question.\n");
+	int i = 10 % -3;
+	printf("%d\n", i);
+	printf("I love you");
 	return 0;
 }
