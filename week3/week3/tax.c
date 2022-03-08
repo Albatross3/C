@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main(void)
 {
+	// float와 double의 차이를 반영한 코드로 변경
 	float income, tax;
 	printf("Enter amount of taxable income: ");
 	scanf_s("%f", &income);
