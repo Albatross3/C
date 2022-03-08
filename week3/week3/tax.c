@@ -1,27 +1,26 @@
 #include <stdio.h>
 int main(void)
 {
-	int income;
-	float tax;
+	float income, tax;
 	printf("Enter amount of taxable income: ");
-	scanf_s("%d", &income);
-	if (income <= 750) {
-		tax = income * 0.01;
+	scanf_s("%f", &income);
+	if (income <= 750.00f) {
+		tax = income * .01f;
 	}
-	else if (income <= 2250) {
-		tax = 7.5 + (income - 750) * 0.02;
+	else if (income <= 2250.00f) {
+		tax = 7.50f + (income - 750.00f) * .02f;
 	}
-	else if (income <= 3750) {
-		tax = 37.5 + (income - 2250) * 0.03;
+	else if (income <= 3750.00f) {
+		tax = 37.50f + (income - 2250.00f) * .03f;
 	}
-	else if (income <= 5250) {
-		tax = 82.5 + (income - 3750) * 0.04;
+	else if (income <= 5250.00f) {
+		tax = 82.50f + (income - 3750.00f) * .04f;
 	}
-	else if (income <= 7000) {
-		tax = 142.5 + (income - 5250) * 0.05;
+	else if (income <= 7000.00f) {
+		tax = 142.50f + (income - 5250.00f) * .05f;
 	}
 	else {
-		tax = 230.0 + (income - 7000) * 0.06;
+		tax = 230.00f + (income - 7000.00f) * .06f;
 	}
 	printf("Tax due: $%.2f", tax);
 	return 0;
