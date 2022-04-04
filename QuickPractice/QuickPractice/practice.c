@@ -1,20 +1,19 @@
 #include <stdio.h>
-#include <stdbool.h>
-#include <stdlib.h>
-#include <time.h>
-
-#define NUM_SUITS 4
-#define NUM_RANKS 13
+#define N 8
 int main(void) 
 {
-	bool in_hand[NUM_SUITS][NUM_RANKS]={false};
-	int num_cards, rank, suits;
-	const char rank_code[] = { '2','3','4','5','6','7','8','9','t','j','q','k','a' };
-	const char suit_code[] = { 'c','d','h','s' };
-
-	srand((unsigned)time(NULL));
-
-	printf("Enter number of cards in hands: ");
-	scanf_s("%d", &num_cards)
-	return 0;
+	int i, j;
+	char checker_board[N][N];
+	for (i = 0; i < N; i++) {
+		for (j = 0; j < N; j++) {
+			if ((i + j) % 2 == 0) checker_board[i][j] = 'B';
+			else checker_board[i][j] = 'R';
+		}
+	}
+	//for (i = 0; i < N; i++) {
+	//	for (j = 0; j < N; j++) {
+	//		printf("%c ", checker_board[i][j]);
+	//	}
+	//	printf("\n");
+	//}
 }
