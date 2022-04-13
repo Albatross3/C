@@ -18,5 +18,17 @@
     <ClCompile Include="practice.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="practice1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="practice2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateProcess.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="QuickPractice.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
