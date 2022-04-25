@@ -1,24 +1,24 @@
 #include <stdio.h>
-
+void swap(int* p, int* q);
 int main(void)
 {
-	int a = 2, b = 5, c = 3;
-	{
-		b = c + a - 1;
-		printf("%d\n", a);
-		printf("%d\n", b);
-		printf("%d\n\n", c);
-
-		{
-			int c = 5;
-			printf("%d\n", a);
-			printf("%d\n", b);
-			printf("%d\n\n", c);
-		}
-	}
-	printf("%d\n", a);
-	printf("%d\n", b);
-	printf("%d\n\n", c);
+	int a = 1,b = 3;
+	printf("%d, %d", a, b);
+	swap(&a, &b);
+	printf("%d, %d", a, b);
 
 	
+}
+void avg_sum(double a[], int n, double* avg, double* sum) {
+	int i;
+
+	*sum = 0.0;
+	for (i = 0; i < n; i++) 
+		*sum += a[i];
+	*avg = *sum / n;
+}
+void swap(int* p, int* q) {
+	int temp = *p;
+	*p = *q;
+	*q = temp;
 }
