@@ -15,16 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="17101967a.c">
+    <ClInclude Include="stack.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stack.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="17101967b.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="17101967c.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="practice.c">
+    <ClCompile Include="rpn_practice.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
