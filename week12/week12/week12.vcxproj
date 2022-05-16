@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{ea460e70-ae30-42c0-b109-59b9ce1c1f81}</ProjectGuid>
-    <RootNamespace>week11</RootNamespace>
+    <ProjectGuid>{4cbde4db-b560-458b-8822-9d3c864d141f}</ProjectGuid>
+    <RootNamespace>week12</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,17 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="stack.h" />
+    <ClCompile Include="inventory.c" />
+    <ClCompile Include="readline.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="rpn_practice.c" />
-    <ClCompile Include="stack.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="week11.rc" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include=".gitignore" />
+    <ClInclude Include="readline.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

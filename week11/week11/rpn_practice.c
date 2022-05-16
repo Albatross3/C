@@ -4,7 +4,7 @@ int main()
 {
 	// scnaf_s 사용할 때 /n 까지 다음에 전달될 수 있는 부분 유의해야함
 	char ch;
-	do
+	doㄴ
 	{
 		printf("Enter an RPN expression: ");
 		make_empty();
