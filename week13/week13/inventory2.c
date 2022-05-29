@@ -73,9 +73,9 @@ void erase(void)
 	printf("Enter part number: ");
 	scanf("%d", &target);
 	for (cur = inventory, prev = NULL; cur != NULL && cur->number != target; prev = cur, cur = cur->next);
-	// target이 없는 경우 
+	// target o
 	if (cur == NULL) printf("Part %d is not found", target);
-	// target이 있는 경우
+	// target x
 	if (prev == NULL) inventory = inventory->next;
 	else prev->next = cur->next;
 	printf("Part %d erased\n", target);
